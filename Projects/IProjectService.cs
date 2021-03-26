@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 
-namespace Projects.Commandline
+namespace Projects
 {
-    internal interface IProjectService
+    public interface IProjectService
     {
         IEnumerable<Project> GetProjects();
     }

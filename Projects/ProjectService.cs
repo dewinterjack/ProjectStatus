@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Projects.Commandline
+namespace Projects
 {
     internal class ProjectService : IProjectService
     {

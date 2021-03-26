@@ -1,4 +1,4 @@
-﻿namespace Projects.Commandline
+﻿namespace Projects
 {
     public sealed class Project
     {

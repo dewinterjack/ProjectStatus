@@ -36,7 +36,8 @@ namespace Projects.Commandline
             var collection = new ServiceCollection();
             var builder = new ContainerBuilder();
 
-            builder.RegisterType<ProjectService>().As<IProjectService>();
+            var projectsAssembly = typeof(IProjectService).Assembly;
+            builder.RegisterAssemblyTypes(projectsAssembly).AsImplementedInterfaces();
             
             builder.Populate(collection);
 
