@@ -12,7 +12,8 @@ namespace Projects.Commandline
         private static void Main()
         {
             RegisterServices();
-            var service = _serviceProvider.GetService<IProjectService>();
+            var projectService = _serviceProvider.GetService<IProjectService>();
+            var projects = projectService.GetProjects();
             DisposeServices();
         }
 
